@@ -22,7 +22,7 @@ public class questao2
         numero = entrada.nextInt();
     
         // ---> Já que todos os divisores de um número perfeito, exceto ele mesmo, 
-        //      é igual ou maior que sua metade. Portanto,
+        //      é igual ou menor que sua metade. Portanto,
         int metNumero = numero/2;
         
         //Desenvolvimento
