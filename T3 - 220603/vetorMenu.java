@@ -237,17 +237,17 @@ public class vetorMenu
         int usrRes = localUsr.nextInt(); 
         
         if(usrRes == 1){
-            int maior = 0;
+            int maior = vResultado[0] ;
             for(int pos = 0; pos < vResultado.length; pos++){
-                if(vResultado[pos] > vResultado[maior]){
+                if(vResultado[pos] > maior){
                     vResultado[maior] = vResultado[pos];
                     System.out.println("O pico máximo do vetor é: "+ vResultado[maior] + " na posição " + pos);
                 }
             }
         }else if(usrRes == 2){
-            int menor = 0;
+            int menor = vResultado[0];
             for(int pos = 0; pos < vResultado.length; pos++){
-                if(vResultado[pos] < vResultado[menor]){
+                if(vResultado[pos] < menor){
                     vResultado[menor] = vResultado[pos];
                     System.out.println("O pico minímo do vetor é: "+ vResultado[menor] + " na posição " + pos);
                 }
